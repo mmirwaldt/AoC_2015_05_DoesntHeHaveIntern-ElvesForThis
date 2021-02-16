@@ -16,6 +16,6 @@ public class PartOneStringCheckerMain {
                 niceStrings++;
             }
         }
-        System.out.println(niceStrings); // 255
+        System.out.println(niceStrings); // result : 255
     }
 }
