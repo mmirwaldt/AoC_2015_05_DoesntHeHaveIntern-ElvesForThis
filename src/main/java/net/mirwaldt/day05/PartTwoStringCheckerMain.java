@@ -16,6 +16,6 @@ public class PartTwoStringCheckerMain {
                 niceStrings++;
             }
         }
-        System.out.println(niceStrings);
+        System.out.println(niceStrings); // result : 55
     }
 }
