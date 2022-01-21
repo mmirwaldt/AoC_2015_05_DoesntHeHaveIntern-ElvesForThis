@@ -1,9 +1,7 @@
-package net.mirwaldt.day05;
+package net.mirwaldt.aoc.year2015.day05;
 
 import java.util.Arrays;
 import java.util.List;
-
-import static net.mirwaldt.day05.StringChecker.Result.*;
 
 public class PartOneStringChecker implements StringChecker {
     private final List<String> FORBIDDEN_STRINGS = Arrays.asList("ab", "cd", "pq", "xy");
@@ -13,7 +11,7 @@ public class PartOneStringChecker implements StringChecker {
     public Result checkString(String input) {
         for (String forbiddenString : FORBIDDEN_STRINGS) {
             if(input.contains(forbiddenString)) {
-                return NAUGHTY;
+                return Result.NAUGHTY;
             }
         }
 
@@ -29,10 +27,10 @@ public class PartOneStringChecker implements StringChecker {
                 hasDoubleLetterInRow = true;
             }
             if(3 <= vowelCounter && hasDoubleLetterInRow) {
-                return NICE;
+                return Result.NICE;
             }
             lastCharString = charString;
         }
-        return NAUGHTY;
+        return Result.NAUGHTY;
     }
 }

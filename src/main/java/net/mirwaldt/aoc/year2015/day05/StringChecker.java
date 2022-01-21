@@ -1,4 +1,4 @@
-package net.mirwaldt.day05;
+package net.mirwaldt.aoc.year2015.day05;
 
 public interface StringChecker {
     enum Result {
